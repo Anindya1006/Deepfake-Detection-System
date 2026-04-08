@@ -1,2 +1,39 @@
-# Deepfake-Detection-System
- It implements and compares two approaches: a baseline CNN and a proposed multimodal model that combines spatial image features with FFT-based frequency features to improve fake image detection accuracy. The repository includes training, evaluation, saved model checkpoints, and performance visualizations for comparing both models.
+Deepfake Detection Using Multimodal Deep Learning
+
+Models
+1. Baseline CNN
+2. Proposed Model (CNN + FFT)
+
+Frontend
+- Streamlit web app for image upload and model comparison
+- Side-by-side prediction cards for both models
+- Saved evaluation chart preview
+
+Run The Frontend
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+Dataset Structure
+
+dataset/
+   train/
+      real/
+      fake/
+   test/
+      real/
+      fake/
+
+Evaluation Metrics
+Accuracy
+F1 Score
+
+Tools
+Python
+PyTorch
+OpenCV
+NumPy
+Scikit-learn
+Matplotlib
+Streamlit
